@@ -50,6 +50,10 @@ module.exports = function (params, callback) {
     if (languages) {
       o.languages = languages;
     }
+    
+    if (templateRoot) {
+      o.templateRoot = templateRoot;
+    }
 
     var pages = i18n(data, o);
 
