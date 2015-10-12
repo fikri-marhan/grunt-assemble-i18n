@@ -38,6 +38,7 @@ module.exports = function (params, callback) {
     var data = params.assemble.options.data;
     var templates = opts.templates;
     var languages = opts.languages;
+    var templateRoot = opts.templateRoot;
 
     if (opts.data) {
        o.data = opts.data;
@@ -50,7 +51,7 @@ module.exports = function (params, callback) {
     if (languages) {
       o.languages = languages;
     }
-    
+
     if (templateRoot) {
       o.templateRoot = templateRoot;
     }
